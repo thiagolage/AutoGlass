@@ -53,7 +53,7 @@ namespace AutoGlass.Tests.UnitTests
                 resultado = _repository.GetProduto(1);
 
             //Assert - Como a exlusão é lógica, o registro ainda deve permanecer no banco, porém com o status Ativo = false
-            Assert.True(resultado!.Ativo = false);
+            Assert.True(resultado!.Ativo == false);
         }
 
         [Fact]

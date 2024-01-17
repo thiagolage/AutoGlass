@@ -24,17 +24,22 @@ namespace AutoGlass.API.Repositories
 
         public Produto GetProduto(int id)
         {
-            throw new NotImplementedException();
+            Produto produto = new Produto();
+            produto.Ativo = false;
+            return produto;
         }
 
         public List<Produto> GetProdutos()
         {
-            throw new NotImplementedException();
+            List<Produto> listaProdutos = new List<Produto>();
+            listaProdutos.Add(new Produto());
+            return listaProdutos;
         }
 
         public List<Produto> GetProdutosByFilters(string? descricao, bool? ativo, string? descricaoFornecedor, string? CNPJFornecedor)
         {
-            throw new NotImplementedException();
+            List<Produto> listaProdutos = new List<Produto>();
+            return listaProdutos;
         }
 
         public bool UpdateProduto(Produto produto)
